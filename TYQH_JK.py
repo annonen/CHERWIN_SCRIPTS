@@ -156,7 +156,7 @@ class RUN:
         backImage = slideImgInfo.get('backImage', None)
         dddddocr_api = os.environ.get('OCR_API', False)
         if not dddddocr_api:
-            print('未定义变量【OCR_API】\n取消验证码识别\n搭建方式：https://github.com/CHERWING/CHERWIN_SCRIPTS')
+            print('未定义变量【OCR_API】\n取消验证码识别\n搭建方式：https://github.com/annonen/CHERWIN_SCRIPTS')
             return False
         if slidingImage and backImage:
             data = {
@@ -339,7 +339,7 @@ if __name__ == '__main__':
 export TYQH= '' 使用相同TYQH变量
 export TYQH_DHID= '112' 设置兑换ID则开启自动兑换，设置为0遍历兑换全部可兑换商品
 export OCR_API= 'http://localhost:3721' 
-✨ 由于青龙python版本问题无法直接使用dddocr需要自行搭建API，搭建方式：https://github.com/CHERWING/CHERWIN_OCR
+✨ 由于青龙python版本问题无法直接使用dddocr需要自行搭建API，搭建方式：https://github.com/annonen/CHERWIN_OCR
 ✨ 如果你的环境可以安装dddocr库则可以替换代码内的【self.get_CapCode】为【self.get_CapCode_local】
 export SCRIPT_UPDATE = 'False' 关闭脚本自动更新，默认开启
 ✨ 推荐定时：59 59 9 1 2-7 * (2-7月每月1日9点59)
@@ -354,12 +354,12 @@ export SCRIPT_UPDATE = 'False' 关闭脚本自动更新，默认开启
         if os.path.isfile('CHERWIN_TOOLS.py'):
             import_Tools()
         else:
-            if down_file('CHERWIN_TOOLS.py', 'https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py'):
+            if down_file('CHERWIN_TOOLS.py', 'https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py'):
                 print('脚本依赖下载完成请重新运行脚本')
                 import_Tools()
             else:
                 print(
-                    '脚本依赖下载失败，请到https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py下载最新版本依赖')
+                    '脚本依赖下载失败，请到https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py下载最新版本依赖')
                 exit()
     print(TIPS)
     token = ''

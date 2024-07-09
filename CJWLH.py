@@ -58,7 +58,7 @@ class RUN:
             self.baseUrl = f'{PROXY_URL}szbay/api/services/app/'
         else:
             print(
-                f'【未设置反代，使用官方域名】❌ 脚本如果报错（unsafe legacy renegotiation）请自行搭建反代，搭建方法见：https://github.com/CHERWING/CHERWIN_SCRIPTS/tree/main/Cloudflare%20Workers%20Proxy(代理变量名【{ENV_NAME}_PROXY_URL】)')
+                f'【未设置反代，使用官方域名】❌ 脚本如果报错（unsafe legacy renegotiation）请自行搭建反代，搭建方法见：https://github.com/annonen/CHERWIN_SCRIPTS/tree/main/Cloudflare%20Workers%20Proxy(代理变量名【{ENV_NAME}_PROXY_URL】)')
             self.baseUrl = 'https://program.springcocoon.com/szbay/api/services/app/'
 
         self.headers ={
@@ -290,12 +290,12 @@ export SCRIPT_UPDATE = 'False' 关闭脚本自动更新，默认开启
         if os.path.isfile('CHERWIN_TOOLS.py'):
             import_Tools()
         else:
-            if down_file('CHERWIN_TOOLS.py', 'https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py'):
+            if down_file('CHERWIN_TOOLS.py', 'https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py'):
                 print('脚本依赖下载完成请重新运行脚本')
                 import_Tools()
             else:
                 print(
-                    '脚本依赖下载失败，请到https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py下载最新版本依赖')
+                    '脚本依赖下载失败，请到https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py下载最新版本依赖')
                 exit()
     print(TIPS)
     token = ''

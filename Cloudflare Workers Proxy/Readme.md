@@ -54,7 +54,7 @@
 
 2. 创建 Workers 脚本：登录到 Cloudflare 账户后，进入 "Workers" 部分，创建一个新的 Workers 脚本。
 
-3. 复制[999域名反代.js](https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/Cloudflare%20Workers%20Proxy/999%E5%9F%9F%E5%90%8D%E5%8F%8D%E4%BB%A3.js)：将提供的反向代理脚本粘贴到 Workers 编辑器中。
+3. 复制[999域名反代.js](https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/Cloudflare%20Workers%20Proxy/999%E5%9F%9F%E5%90%8D%E5%8F%8D%E4%BB%A3.js)：将提供的反向代理脚本粘贴到 Workers 编辑器中。
 
 4. 保存并部署：保存脚本后，点击 "Deploy" 按钮，以部署您的 Workers 脚本。
 

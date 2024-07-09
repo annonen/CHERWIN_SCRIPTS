@@ -1,7 +1,7 @@
 # !/usr/bin/python3
 # -- coding: utf-8 --
 # -------------------------------
-# 邀请码：https://github.com/CHERWING/CHERWIN_SCRIPTS/assets/160421895/6dbacc8f-1c1a-47cf-9760-327385e85a0f
+# 邀请码：https://github.com/annonen/CHERWIN_SCRIPTS/assets/160421895/6dbacc8f-1c1a-47cf-9760-327385e85a0f
 # ✨请走作者邀请码支持开发，谢谢！✨
 # 定时至少4次
 # cron "5 7,11,15,20 * * *" script-path=xxx.py,tag=匹配cron用
@@ -64,7 +64,7 @@ class RUN:
             self.baseUrl = CF_PROXY_URL
         else:
             print(
-                f'【未设置反代，使用官方域名】❌ 脚本如果报错（unsafe legacy renegotiation）请自行搭建反代，搭建方法见：https://github.com/CHERWING/CHERWIN_SCRIPTS/tree/main/Cloudflare%20Workers%20Proxy')
+                f'【未设置反代，使用官方域名】❌ 脚本如果报错（unsafe legacy renegotiation）请自行搭建反代，搭建方法见：https://github.com/annonen/CHERWIN_SCRIPTS/tree/main/Cloudflare%20Workers%20Proxy')
             self.baseUrl = 'https://mc.999.com.cn/'
 
         self.headers = {
@@ -321,7 +321,7 @@ if __name__ == '__main__':
       打开抓包工具
       找{CK_URL}{CK_NAME}
 参数示例：{CK_EX}
-邀请码：https://github.com/CHERWING/CHERWIN_SCRIPTS/assets/160421895/6dbacc8f-1c1a-47cf-9760-327385e85a0f
+邀请码：https://github.com/annonen/CHERWIN_SCRIPTS/assets/160421895/6dbacc8f-1c1a-47cf-9760-327385e85a0f
 ✨请走作者邀请码支持开发，谢谢！✨
 ✨ ✨✨wxpusher一对一推送功能，
   ✨需要定义变量export WXPUSHER=wxpusher的app_token，不设置则不启用wxpusher一对一推送
@@ -341,12 +341,12 @@ export SCRIPT_UPDATE = 'False' 关闭脚本自动更新，默认开启
         if os.path.isfile('CHERWIN_TOOLS.py'):
             import_Tools()
         else:
-            if down_file('CHERWIN_TOOLS.py', 'https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py'):
+            if down_file('CHERWIN_TOOLS.py', 'https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py'):
                 print('脚本依赖下载完成请重新运行脚本')
                 import_Tools()
             else:
                 print(
-                    '脚本依赖下载失败，请到https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py下载最新版本依赖')
+                    '脚本依赖下载失败，请到https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/CHERWIN_TOOLS.py下载最新版本依赖')
                 exit()
     print(TIPS)
     token = ''

@@ -5,7 +5,7 @@
  * 项目变量：KWW
  * 项目定时：每天9，18，20
  * cron: 0 9,18,20 * * *
- * github仓库：https://github.com/CHERWING/CHERWIN_SCRIPTS
+ * github仓库：https://github.com/annonen/CHERWIN_SCRIPTS
  *
  */
 
@@ -119,7 +119,7 @@ UserCookieArr = ENV_SPLIT(UserCookie)
                 Log(`\n 最新版本：${APP_CONFIG['NEW_VERSION']}`)
                 if (SCRIPT_UPDATE==true){
                     console.log('开始更新脚本')
-                    const fileUrl = `https://github.com/CHERWING/CHERWIN_SCRIPTS/raw/main/${ENV_NAME}.js`;
+                    const fileUrl = `https://github.com/annonen/CHERWIN_SCRIPTS/raw/main/${ENV_NAME}.js`;
                     const downloadPath = `./${ENV_NAME}.js`;
                     downloadFile(fileUrl, downloadPath)
                 }
